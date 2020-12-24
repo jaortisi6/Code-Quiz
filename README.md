@@ -7,7 +7,7 @@
 
 # Description
 
-This quiz was created primarily using JavaScript and HTML and was styled using CSS.
+This quiz was created primarily using JavaScript and HTML and was styled using CSS. It will test your knowledge of all 3 languages using multiple choice questions!
 
 # Assignment
 
