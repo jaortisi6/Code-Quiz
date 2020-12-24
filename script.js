@@ -62,18 +62,18 @@ let quizQuestions = [{
 },
 {
     question: "When is localStorage data cleared?",
-    choiceA: "No expiration time",
-    choiceB: "On page reload",
-    choiceC: "On browser close",
-    choiceD: "On computer restart",
+    choiceA: "Never",
+    choiceB: "When the page reloads",
+    choiceC: "When the browser closes",
+    choiceD: "when the computer restarts",
     correctAnswer: "a"
 },
 {
-    question: "Where is the correct place to insert a JavaScript?",
-    choiceA: "The <body> section",
-    choiceB: "The <head> section",
-    choiceC: "Both the <head> section and the <body> section are correct",
-    choiceD: "In the search bar",
+    question: "Where is the correct place to insert JavaScript?",
+    choiceA: "The &lt;body&gt section",
+    choiceB: "The &lt;head&gt section",
+    choiceC: "Both the &lt;head&gt section and the &lt;body&gt section are correct",
+    choiceD: "The search bar",
     correctAnswer: "c"
 },
 
@@ -91,17 +91,17 @@ let quizQuestions = [{
     choiceA: "alert(Hello World);",
     choiceB: "alertBox(Hello World);",
     choiceC: "msg(Hello World);",
-    choiceD: "The script.js file",
+    choiceD: "show(Hello World)",
     correctAnswer: "a"
 
 },
 
 {
     question: "Choose the correct HTML element for the largest heading:",
-    choiceA: " heading ",
-    choiceB: " largest heading ",
-    choiceC: " HEADING ",
-    choiceD: " h1 ",
+    choiceA: "&lt;heading&gt",
+    choiceB: " &lt;largest heading&gt",
+    choiceC: " &lt;HEADING&gt",
+    choiceD: " &lt;h1&gt",
     correctAnswer: "d"
 },
 
