@@ -73,7 +73,7 @@ let quizQuestions = [{
     choiceA: "The <body> section",
     choiceB: "The <head> section",
     choiceC: "Both the <head> section and the <body> section are correct",
-    choiceD: "msgBox(Hello World);",
+    choiceD: "In the search bar",
     correctAnswer: "c"
 },
 
