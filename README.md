@@ -1,6 +1,10 @@
 # 04 Web APIs: Code Quiz
 [Launch Code Quiz](https://jaortisi6.github.io/Code-Quiz/)
 
+# Screenshot
+
+![Password Generator Screenshot](Screenshot.png)
+
 # Description
 
 This quiz was created primarily using JavaScript and HTML and was styled using CSS.

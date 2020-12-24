@@ -1,26 +1,26 @@
 // Gathering HTML elements for manipulation
-var quizBody = document.getElementById("quiz");
-var resultsEl = document.getElementById("result");
-var finalScoreEl = document.getElementById("finalScore");
-var gameoverDiv = document.getElementById("gameover");
-var questionsEl = document.getElementById("questions");
-var quizTimer = document.getElementById("timer");
-var startQuizButton = document.getElementById("startbtn");
-var startQuizDiv = document.getElementById("startpage");
-var highscoreContainer = document.getElementById("highscoreContainer");
-var highscoreDiv = document.getElementById("high-scorePage");
-var highscoreInputName = document.getElementById("initials");
-var highscoreDisplayName = document.getElementById("highscore-initials");
-var endGameBtns = document.getElementById("endGameBtns");
-var submitScoreBtn = document.getElementById("submitScore");
-var highscoreDisplayScore = document.getElementById("highscore-score");
-var buttonA = document.getElementById("a");
-var buttonB = document.getElementById("b");
-var buttonC = document.getElementById("c");
-var buttonD = document.getElementById("d");
+let quizBody = document.getElementById("quiz");
+let resultsEl = document.getElementById("result");
+let finalScoreEl = document.getElementById("finalScore");
+let gameoverDiv = document.getElementById("gameover");
+let questionsEl = document.getElementById("questions");
+let quizTimer = document.getElementById("timer");
+let startQuizButton = document.getElementById("startbtn");
+let startQuizDiv = document.getElementById("startpage");
+let highscoreContainer = document.getElementById("highscoreContainer");
+let highscoreDiv = document.getElementById("high-scorePage");
+let highscoreInputName = document.getElementById("initials");
+let highscoreDisplayName = document.getElementById("highscore-initials");
+let endGameBtns = document.getElementById("endGameBtns");
+let submitScoreBtn = document.getElementById("submitScore");
+let highscoreDisplayScore = document.getElementById("highscore-score");
+let buttonA = document.getElementById("a");
+let buttonB = document.getElementById("b");
+let buttonC = document.getElementById("c");
+let buttonD = document.getElementById("d");
 
 // Quiz question object
-var quizQuestions = [{
+let quizQuestions = [{
     question: "What does DOM stand for?",
     choiceA: "Document Object Model",
     choiceB: "Display Object Management",
@@ -69,21 +69,50 @@ var quizQuestions = [{
     correctAnswer: "a"
 },
 {
-    question: "What does WWW stand for?",
-    choiceA: "Web World Workings",
-    choiceB: "Weak Winter Wind",
-    choiceC: "World Wide Web",
-    choiceD: "Wendy Wants Waffles",
+    question: "Where is the correct place to insert a JavaScript?",
+    choiceA: "The <body> section",
+    choiceB: "The <head> section",
+    choiceC: "Both the <head> section and the <body> section are correct",
+    choiceD: "msgBox(Hello World);",
     correctAnswer: "c"
 },
+
+{
+    question: "How do you insert a comment in a CSS file?",
+    choiceA: "// this is a comment //",
+    choiceB: "/* this is a comment */",
+    choiceC: "// this is a comment",
+    choiceD: "' this is a comment",
+    correctAnswer: "b"
+},
+
+{
+    question: "How do you write Hello World in an alert box?",
+    choiceA: "alert(Hello World);",
+    choiceB: "alertBox(Hello World);",
+    choiceC: "msg(Hello World);",
+    choiceD: "The script.js file",
+    correctAnswer: "a"
+
+},
+
+{
+    question: "Choose the correct HTML element for the largest heading:",
+    choiceA: " heading ",
+    choiceB: " largest heading ",
+    choiceC: " HEADING ",
+    choiceD: " h1 ",
+    correctAnswer: "d"
+},
+
 ];
-// Other global variables
-var finalQuestionIndex = quizQuestions.length;
-var currentQuestionIndex = 0;
-var timeLeft = 60;
-var timerInterval;
-var score = 0;
-var correct;
+// Other global letiables
+let finalQuestionIndex = quizQuestions.length;
+let currentQuestionIndex = 0;
+let timeLeft = 120;
+let timerInterval;
+let score = 0;
+let correct;
 
 // This function cycles through the object array containing the quiz questions to generate the questions and answers.
 function generateQuizQuestion() {
@@ -91,7 +120,7 @@ function generateQuizQuestion() {
     if (currentQuestionIndex === finalQuestionIndex) {
         return showScore();
     }
-    var currentQuestion = quizQuestions[currentQuestionIndex];
+    let currentQuestion = quizQuestions[currentQuestionIndex];
     questionsEl.innerHTML = "<p>" + currentQuestion.question + "</p>";
     buttonA.innerHTML = currentQuestion.choiceA;
     buttonB.innerHTML = currentQuestion.choiceB;
@@ -132,9 +161,9 @@ submitScoreBtn.addEventListener("click", function highscore() {
         alert("Initials cannot be blank");
         return false;
     } else {
-        var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
-        var currentUser = highscoreInputName.value.trim();
-        var currentHighscore = {
+        let savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
+        let currentUser = highscoreInputName.value.trim();
+        let currentHighscore = {
             name: currentUser,
             score: score
         };
@@ -153,10 +182,10 @@ submitScoreBtn.addEventListener("click", function highscore() {
 function generateHighscores() {
     highscoreDisplayName.innerHTML = "";
     highscoreDisplayScore.innerHTML = "";
-    var highscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
+    let highscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
     for (i = 0; i < highscores.length; i++) {
-        var newNameSpan = document.createElement("li");
-        var newScoreSpan = document.createElement("li");
+        let newNameSpan = document.createElement("li");
+        let newScoreSpan = document.createElement("li");
         newNameSpan.textContent = highscores[i].name;
         newScoreSpan.textContent = highscores[i].score;
         highscoreDisplayName.appendChild(newNameSpan);
@@ -179,7 +208,7 @@ function clearScore() {
     highscoreDisplayName.textContent = "";
     highscoreDisplayScore.textContent = "";
 }
-// This function sets all the variables back to their original values and shows the home page to enable replay of the quiz
+// This function sets all the letiables back to their original values and shows the home page to enable replay of the quiz
 function replayQuiz() {
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";

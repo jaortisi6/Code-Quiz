@@ -14,12 +14,22 @@ p{
     color: white;
     text-shadow: .5px .5px white;
     text-align: center;
-    font-size: xx-large;
+    font-size: x-large;
     font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
 
 }
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
 h2{
     font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
 }
 input{
     text-align: center;
@@ -44,7 +54,7 @@ input{
     border: 3px double darkgray;
     color:  white;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     padding: 20px;
     width: 200px;
     margin-top: 3px;
