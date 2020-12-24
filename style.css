@@ -1,16 +1,19 @@
-:root{
+:root {
 background-color:  #18453B;
 }
 
-li{
+li {
     color: black;
-    list-style-type: disc;
     font-family: 'Orbitron', sans-serif;
     font-size: x-large;
     font-weight: bold;
 }
 
-p{
+ol {
+    list-style-type: disc;
+}
+
+p {
     color: white;
     text-shadow: .5px .5px white;
     text-align: center;
@@ -20,18 +23,18 @@ p{
 
 }
 
-h1{
+h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: xx-large;
     font-weight: bolder;
 }
 
-h2{
+h2 {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     font-size: x-large;
 }
-input{
+input {
     text-align: center;
 }
 
@@ -60,11 +63,11 @@ input{
     margin-top: 3px;
   }
 
-  button:hover{
+  button:hover {
       box-shadow: 4px 3px 6px darkgray;
   }
 
-#startpage{
+#startpage {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,12 +96,12 @@ input{
     align-items: center;
 }
 
-#highScore{
+#highScore {
     height: 1.5rem;
     border: groove 2px;
 }
 
-#high-scorePage{
+#high-scorePage {
     display: none;
     width: 50%;
     border: solid;
@@ -108,7 +111,7 @@ input{
     background:  #18453B;;
 }
 
-#highscore-header{
+#highscore-header {
     display:flex;
     justify-content: space-around;
     border-bottom-style: outset;
@@ -117,7 +120,7 @@ input{
     color: white;
     font-family: 'Orbitron', sans-serif;
 }
-#highscoreContainer{
+#highscoreContainer {
     height: 100%;
     width: 100%;
     display: none;
@@ -126,32 +129,32 @@ input{
     justify-content: center;
 }
 
-#initials{
+#initials {
     margin: .5rem;
     height: 1.75rem;
 }
 
-#highscore-initials{
+#highscore-initials {
     display: inline-block;
     padding-left: 9.5rem;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
 }
 
-#highscore-score{
+#highscore-score {
     float: right;
     padding-right: 8.75rem;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
 }
 
-#finalScore{
+#finalScore {
     padding-bottom: 0.5rem;
     font-size: x-large;
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
 }
 
-#endGameBtns{
+#endGameBtns {
     display: none;
 }
