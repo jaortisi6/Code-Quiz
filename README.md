@@ -13,7 +13,7 @@ This quiz was created primarily using JavaScript and HTML and was styled using C
 
 # Screenshot
 
-![Password Generator Screenshot](Screenshot.png)(Screenshot_2.png)
+![Password Generator Screenshot](Screenshot.png)![Password Generator Screenshot 2](Screenshot_2.png)
 
 # License
 
