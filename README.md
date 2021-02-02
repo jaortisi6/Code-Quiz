@@ -1,7 +1,7 @@
 # 04 Web APIs: Code Quiz
 [Launch Code Quiz](https://jaortisi6.github.io/Code-Quiz/)
 
-# Technologies
+# Technologies Used
 ```
 HTML
 JavaScript
