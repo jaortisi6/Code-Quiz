@@ -6,7 +6,6 @@
 HTML
 JavaScript
 CSS
-
 ```
 # Description
 
